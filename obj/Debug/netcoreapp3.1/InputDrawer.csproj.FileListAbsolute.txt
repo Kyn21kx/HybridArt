@@ -1,0 +1,16 @@
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.exe
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.csprojAssemblyReference.cache
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.AssemblyInfoInputs.cache
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.AssemblyInfo.cs
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.deps.json
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.runtimeconfig.json
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.runtimeconfig.dev.json
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.dll
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\InputDrawer.pdb
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\SharpDX.dll
+X:\Programming\C#\InputDrawer\bin\Debug\netcoreapp3.1\SharpDX.XInput.dll
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.csproj.CoreCompileInputs.cache
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.csproj.CopyComplete
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.dll
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.pdb
+X:\Programming\C#\InputDrawer\obj\Debug\netcoreapp3.1\InputDrawer.genruntimeconfig.cache
