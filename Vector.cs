@@ -16,6 +16,25 @@ namespace InputDrawer {
 			this.y = y;
 		}
 
+		public static Vector operator +(Vector v, Vector u) {
+			Vector w = v;
+			w.x += u.x;
+			w.y += u.y;
+			return w;
+		}
+
+		public static Vector operator *(Vector v, float scalar) {
+			Vector r = v;
+			r.x *= scalar;
+			r.y *= scalar;
+			return r;
+		}
+
+		public static explicit operator POINT(Vector v) {
+			POINT p = new POINT((int)v.x, (int)v.y);
+			return p;
+		}
+
 		public override string ToString() {
 			return $"({this.x}, {this.y})";
 		}

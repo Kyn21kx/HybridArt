@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Threading;
+using System.Diagnostics;
 
 namespace InputDrawer {
 	class Program {
 		static void Main(string[] args) {
+			Console.Write("Introduce la sensitividad del mouse: ");
+			float sensitivity = float.Parse(Console.ReadLine());
 			Input inputManager = new Input();
+			Vector mousePos = Vector.Zero;
 			while (true) {
 				if (inputManager.ControllerConnected) {
 					//cntr++;
@@ -21,8 +25,14 @@ namespace InputDrawer {
 					if (inputManager.Y) {
 						Console.Write("Y ");
 					}
-					Console.WriteLine($"LS: {inputManager.LS}");
-					Console.WriteLine($"RS: {inputManager.RS}");
+
+					mousePos += inputManager.RS * sensitivity;
+					//VirtualController.ClientToScreen(hWnd, ref mouseRef);
+					VirtualController.SetCursorPos((int)mousePos.x, -(int)mousePos.y);
+
+					Console.WriteLine($"Mouse: {mousePos}");
+					//Console.WriteLine($"RS: {inputManager.RS}");
+					
 					if (inputManager.Button != 0)
 						Console.WriteLine();
 				}

@@ -5,8 +5,9 @@ namespace InputDrawer {
 	class Input {
 		//XOR the button with the inverted desired button, and compare
 
-		private static Vector lsReference;
-		private static Vector rsReference;
+		private Vector lsReference;
+		private Vector rsReference;
+		private Vector dPad;
 		private const int DEADBAND = 2500;
 
 		private Controller controller;
@@ -34,9 +35,23 @@ namespace InputDrawer {
 			}
 		}
 
+		public bool DPadRight { get { return (StateGamepad.Buttons & GamepadButtonFlags.DPadRight) != 0; } }
+		public bool DPadLeft { get { return (StateGamepad.Buttons & GamepadButtonFlags.DPadLeft) != 0; } }
+		public bool DPadUp { get { return (StateGamepad.Buttons & GamepadButtonFlags.DPadUp) != 0; } }
+		public bool DPadDown { get { return (StateGamepad.Buttons & GamepadButtonFlags.DPadDown) != 0; } }
+
+		//TODO: Make a vector that represents the position
+		public Vector DPad { 
+			get {
+
+				return Vector.Zero;
+			} }
+
 		public Input() {
 			controller = new Controller(UserIndex.One);
-			lsReference = new Vector(0f, 0f);
+			lsReference = Vector.Zero;
+			rsReference = Vector.Zero;
+			dPad = Vector.Zero;
 		}
 
 	}
